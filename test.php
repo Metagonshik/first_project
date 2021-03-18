@@ -133,6 +133,6 @@ $a = '123';
 		echo 'да';
 	} else {echo 'нет';}
 */
-
+dopdsufdsofhsdlkfhsdkl
  test
 ?>
