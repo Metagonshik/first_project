@@ -126,13 +126,241 @@ $a = '123';
 	echo $result;
 */
 /*	$a = '123456';
-
 	$b = $a[0]+$a[1]+$a[2];
 	$c = $a[3]+$a[4]+$a[5];
 	if($b == $c) {
 		echo 'да';
 	} else {echo 'нет';}
 */
-dopdsufdsofhsdlkfhsdkl
- test
+/* foreach цикл работающий со всеми элементами массива
+	$arr = ['a'=>1, 'b'=>2, 'c'=>3, 'd'=>4, 'e'=>5];
+	foreach ($arr as $key=>$elem) {
+		echo $key.'-'.$elem.'<br>'; //выведет: 'a-1', 'b-2', 'c-3' и так далее...
+	}
+*/
+/* while цикл выполнящийския пока верно условие
+	$i = 1; // счетчик цикла
+		while ($i <= 5) { //цикл закончится, когда $i станет больше 5-ти
+		
+			echo $i.'<br>';
+			$i++;
+			}
+*/
+/* вывод элементов на экран (foreach)
+	$arr = ['html','css', 'php', 'js', 'jq'];
+	foreach($arr as $result) {
+		echo $result.'<br>';
+	}
+*/
+/* суммируем элементы массива (foreach)
+	$arr = [10,20,15,17,24,35];
+	$result = 0;
+	foreach($arr as $elem) {
+		$result = $result+$elem;
+	}
+	echo $result;
+*/
+/* while выводим на экран числа от 1 до 100
+	$a = 1;
+	while($a <= 100) {
+		echo $a.'<br>';
+		$a++;
+	}
+*/
+/* for выводи на экран числа от 1 до 100
+	for($a = 1;$a <=100; $a++) {
+		echo $a.'<br>';
+	}
+*/
+/* практика с циклами
+	$arr = ['html','css', 'php', 'js', 'jq'];
+	foreach($arr as $elem) {
+		echo $elem.'<br>';
+	}
+
+	$arr = [1,2,3,4,5];
+	$result = 0;
+	foreach($arr as $elem) {
+		$result = $result + $elem;
+		}
+		echo $result;
+
+	$arr = [1,2,3,4,5];
+	$result = 0;
+	foreach($arr as $elem) {
+		$result = $result + $elem*2;
+	}
+	echo $result;
+*/
+/* ассоциативный массив (foreach)
+$arr = ['green' => 'зеленый','red' => 'красный', 'yellow' => 'желтый'];
+	foreach($arr as $key=>$elem){
+		echo $key.' - '.$elem.'<br>';
+	}
+
+	$arr = ['Коля'=>'200', 'Вася'=>'300', 'Петя'=>'400'];
+	foreach($arr as $key=>$elem){
+		echo $key.' - '.'зарплата '.$elem.' долларов.'.'<br>';
+	}
+*/
+/*			Практика (циклы while и for)
+$a = 1;
+	while($a <=100){
+		echo $a.'<br>';
+		$a++;
+	}
+
+	for($a = 1; $a <=100; $a++){
+		echo $a.'<br>';
+	}
+
+	$a = 11;
+	while($a <=33){
+		echo $a.'<br>';
+		$a++;
+	}
+
+	for($a = 11;$a <= 33;$a++) {
+		echo $a.'<br>';
+	}
+
+	$a = 0;
+	while($a <= 100){
+		echo $a.'<br>';
+		$a += 2;
+	}
+
+	for($a =0;$a <=100;$a += 2){
+		echo $a.'<br>';
+	}
+// 8 задача
+	$a = 1;
+	$result = 0;
+	while($a <= 100){
+		$result = $result+$a;
+		$a++;
+	}
+	echo $result;
+// 9 задача
+	$result = 0;
+	for($a=1;$a<=100;$a++){
+		$result = $result+$a;
+	}
+	echo $result;
+// 10 задача
+	$arr = [2, 5, 9, 15, 0, 4];
+	foreach($arr as $elem){
+		if($elem > 3 and $elem <10){
+			echo $elem.'<br>';
+		}
+		else {
+			null;
+		}
+	}
+// 11 задача
+	$arr = [2, 5, 9, 15, 0, 4, -2, -5, -9, -15, -0, -4];
+	$result = 0;
+	foreach($arr as $elem){
+		if($elem >=0){
+			$result = $result + $elem;
+			
+		}
+		else {
+			null;
+		}
+		
+	}
+		echo $result.'<br>';
+
+// 12 задача
+	$arr = [1, 2, 5, 9, 4, 13, 4, 10];
+	foreach($arr as $elem){
+		if($elem === 4) {
+			echo 'Есть!'.'<br>';
+		}
+		else {
+			null;
+		}
+	}
+
+// 13 задача
+	$arr = ['10', '20', '30', '50', '235', '3000'];
+	foreach($arr as $elem){
+		if($elem[0] == 1) {
+			echo $elem.'<br>';
+		} elseif($elem[0] == 2) {
+			echo $elem.'<br>';
+		} elseif($elem[0] == 5) {
+			echo $elem.'<br>';
+		}
+	}
+
+// 14 задача ????
+	$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+	$result = '';
+	$min = '-';
+	$result.=$min;
+	foreach($arr as $elem) {
+		$result .= $elem.$min;
+		}
+		echo $result;
+
+// 15 задача ????
+/*	$arr = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресение'];
+	foreach($arr as $elem){
+		if($elem != $arr[5] and $elem != $arr[6]){
+			echo $elem.'<br>';
+		} else {
+			echo '<b>'.$elem.'</b>''<br>';
+		}
+	}
+// 16 задача
+	$arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+	$day = 'пн';
+	foreach($arr as $elem) {
+		if($elem == $day) {
+			echo '<i>'.$elem.'</i><br>';
+		} else {
+			echo $elem.'<br>';
+		}
+	}
+
+// 17 задача
+	for($a=1;$a<=100;$a++){
+		$arr[] = $a;
+		}
+	var_dump($arr);
+
+// 18 задача
+	$arr=['green'=>'зеленый', 'red'=>'красный', 'blue'=>'голубой'];
+	$en=[];
+	$ru=[];
+	foreach($arr as $key=>$elem){
+		$en[] = $key;
+		$ru[] = $elem;
+	}
+	var_dump($en);
+	var_dump($ru);
+*/
+// 19 задача ?????
+	/*$num=1000;
+	$i=0;
+	while($num <= 50){
+		$num = $num / 2;	
+		$i++;
+	}
+	echo $num.'<br>';
+	echo $i;*/
+	$num=1000;
+	$i=0;
+	while($num <= 50){
+		if($num <= 50){
+		$num = $num / 2;
+		} else { 
+		null;
+		}
+		$i++;
+	}
+	echo $num.'<br>';
+	echo $i;
 ?>
