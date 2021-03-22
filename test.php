@@ -366,7 +366,7 @@ echo sqrt(2).'<br>';
 	echo round(sqrt(2), 2).'<br>';
 	echo ceil(round(sqrt(2), 2)).'<br>';
 	echo mt_rand(1, 1500);
-*/
+
 	echo sqrt(1000).'<br>';
 	echo floor(sqrt(1000)).'<br>';
 	echo ceil(sqrt(1000)).'<br>';
@@ -374,4 +374,74 @@ echo sqrt(2).'<br>';
 	$arr[2] = floor(sqrt(1000));
 	$arr[3] = ceil(sqrt(1000));
 	var_dump($arr);
+
+	
+	for($i=0;$i!=30;$i++){
+		$arr[]= mt_rand(1,10);
+		
+	}
+	echo '<pre>';print_r($arr);echo '<pre>';
+
+	$a=7;
+	$b=3;
+	if($a%$b==0){
+		echo 'Делится на '.($a%$b==0);
+	} else {
+		echo 'Делится с остаткосм '.fmod($a,$b);
+	}
+
+	$st=pow(2,10);
+	echo $st.'<br>';
+	echo sqrt(245).'<br>';
+
+	$arr = [4, 2, 5, 19, 13, 0, 10];
+	$result=0;
+	foreach($arr as $elem){
+		$result = $result + pow($elem,2);
+	}
+	echo sqrt($result);
+
+	echo sqrt(379).'<br>';
+	echo round(sqrt(379),0).'<br>';
+	echo round(sqrt(379),1).'<br>';
+	echo round(sqrt(379),2).'<br>';
+	echo sqrt(587).'<br>';
+	echo floor(sqrt(587)).'<br>';
+	echo ceil(sqrt(587)).'<br>';
+	$arr=['floor'=>floor(sqrt(587)),'ceil'=>ceil(sqrt(587))];
+	echo '<pre>';print_r($arr);echo '<pre>';
+	$arr=[4, -2, 5, 19, -130, 0, 10];
+	echo min($arr).'<br>';
+	echo max($arr).'<br>';
+	echo mt_rand(1,100).'<br>';
+	for($i=0;$i<=10;$i++){
+		$arr1[]=mt_rand(1,100);
+	}
+	echo '<pre>';print_r($arr1);echo '<pre>';
+	$a=10;
+	$b=30;
+	echo abs($a-$b);
+	$arr2=[1, 2, -1, -2, 3, -3];
+	foreach($arr2 as $key=>$elem){
+		$arr2[$key]=abs($elem);
+	}
+	echo '<pre>';print_r($arr2);echo '<pre>';
+
+	$arr =[];
+	$a=1000000;
+	for($i=1;$i<=1000000;$i++){
+		if($a%$i==0) $arr[]=$i;
+	}
+	echo '<pre>';print_r($arr);echo '<pre>';
+
+	$arr=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	foreach($arr as $elem) {
+		$result = $result + $elem;
+		$i++;
+			if($result > 10){
+				break;
+			}
+	}
+	echo $i;
+*/
 ?>
