@@ -295,7 +295,7 @@ $a = 1;
 		}
 	}
 
-// 14 задача ????
+// 14 задача
 	$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 	$result = '';
 	$min = '-';
@@ -305,7 +305,7 @@ $a = 1;
 		}
 		echo $result;
 
-// 15 задача ????
+// 15 задача
 /*	$arr = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресение'];
 	foreach($arr as $elem){
 		if($elem != $arr[5] and $elem != $arr[6]){
@@ -341,26 +341,25 @@ $a = 1;
 	}
 	var_dump($en);
 	var_dump($ru);
-*/
-// 19 задача ?????
-	/*$num=1000;
-	$i=0;
-	while($num <= 50){
-		$num = $num / 2;	
-		$i++;
-	}
-	echo $num.'<br>';
-	echo $i;*/
+
+// 19 задача
 	$num=1000;
-	$i=0;
-	while($num <= 50){
-		if($num <= 50){
-		$num = $num / 2;
-		} else { 
-		null;
+	$i=1;
+	$result = 0;
+	while($result < 50){
+		$result = $i*2;	
+		$i++; 
 		}
-		$i++;
-	}
-	echo $num.'<br>';
+	echo $result.'<br>';
 	echo $i;
+
+	$num=1000;
+	$result=0;
+	for($i=1;$result<50;$i++){
+		$result=$i*2;
+	}
+	echo $result.'<br>';
+	echo $i;
+*/
+
 ?>
