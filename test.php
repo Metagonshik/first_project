@@ -361,5 +361,17 @@ $a = 1;
 	echo $result.'<br>';
 	echo $i;
 */
-
+/*	мат. функции
+echo sqrt(2).'<br>';
+	echo round(sqrt(2), 2).'<br>';
+	echo ceil(round(sqrt(2), 2)).'<br>';
+	echo mt_rand(1, 1500);
+*/
+	echo sqrt(1000).'<br>';
+	echo floor(sqrt(1000)).'<br>';
+	echo ceil(sqrt(1000)).'<br>';
+	$arr[1] = sqrt(1000);
+	$arr[2] = floor(sqrt(1000));
+	$arr[3] = ceil(sqrt(1000));
+	var_dump($arr);
 ?>
