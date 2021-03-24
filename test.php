@@ -538,10 +538,10 @@ echo sqrt(2).'<br>';
 	echo '<pre>';print_r($arr = explode('-', $date));echo '<pre>';
 	echo '<pre>';print_r(implode('.', array_reverse($arr)));echo '<pre>';
 */
-
-
-
-
+// Функции работы с массивами
+	$arr=range(1,100);
+	$arr=array_sum($arr);
+	echo $arr;
 
 
 
