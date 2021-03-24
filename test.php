@@ -177,14 +177,12 @@ $a = '123';
 	foreach($arr as $elem) {
 		echo $elem.'<br>';
 	}
-
 	$arr = [1,2,3,4,5];
 	$result = 0;
 	foreach($arr as $elem) {
 		$result = $result + $elem;
 		}
 		echo $result;
-
 	$arr = [1,2,3,4,5];
 	$result = 0;
 	foreach($arr as $elem) {
@@ -197,7 +195,6 @@ $arr = ['green' => 'зеленый','red' => 'красный', 'yellow' => 'же
 	foreach($arr as $key=>$elem){
 		echo $key.' - '.$elem.'<br>';
 	}
-
 	$arr = ['Коля'=>'200', 'Вася'=>'300', 'Петя'=>'400'];
 	foreach($arr as $key=>$elem){
 		echo $key.' - '.'зарплата '.$elem.' долларов.'.'<br>';
@@ -209,27 +206,22 @@ $a = 1;
 		echo $a.'<br>';
 		$a++;
 	}
-
 	for($a = 1; $a <=100; $a++){
 		echo $a.'<br>';
 	}
-
 	$a = 11;
 	while($a <=33){
 		echo $a.'<br>';
 		$a++;
 	}
-
 	for($a = 11;$a <= 33;$a++) {
 		echo $a.'<br>';
 	}
-
 	$a = 0;
 	while($a <= 100){
 		echo $a.'<br>';
 		$a += 2;
 	}
-
 	for($a =0;$a <=100;$a += 2){
 		echo $a.'<br>';
 	}
@@ -271,7 +263,6 @@ $a = 1;
 		
 	}
 		echo $result.'<br>';
-
 // 12 задача
 	$arr = [1, 2, 5, 9, 4, 13, 4, 10];
 	foreach($arr as $elem){
@@ -282,7 +273,6 @@ $a = 1;
 			null;
 		}
 	}
-
 // 13 задача
 	$arr = ['10', '20', '30', '50', '235', '3000'];
 	foreach($arr as $elem){
@@ -294,7 +284,6 @@ $a = 1;
 			echo $elem.'<br>';
 		}
 	}
-
 // 14 задача
 	$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 	$result = '';
@@ -304,7 +293,6 @@ $a = 1;
 		$result .= $elem.$min;
 		}
 		echo $result;
-
 // 15 задача
 /*	$arr = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресение'];
 	foreach($arr as $elem){
@@ -324,13 +312,11 @@ $a = 1;
 			echo $elem.'<br>';
 		}
 	}
-
 // 17 задача
 	for($a=1;$a<=100;$a++){
 		$arr[] = $a;
 		}
 	var_dump($arr);
-
 // 18 задача
 	$arr=['green'=>'зеленый', 'red'=>'красный', 'blue'=>'голубой'];
 	$en=[];
@@ -341,7 +327,6 @@ $a = 1;
 	}
 	var_dump($en);
 	var_dump($ru);
-
 // 19 задача
 	$num=1000;
 	$i=1;
@@ -352,7 +337,6 @@ $a = 1;
 		}
 	echo $result.'<br>';
 	echo $i;
-
 	$num=1000;
 	$result=0;
 	for($i=1;$result<50;$i++){
@@ -366,7 +350,6 @@ echo sqrt(2).'<br>';
 	echo round(sqrt(2), 2).'<br>';
 	echo ceil(round(sqrt(2), 2)).'<br>';
 	echo mt_rand(1, 1500);
-
 	echo sqrt(1000).'<br>';
 	echo floor(sqrt(1000)).'<br>';
 	echo ceil(sqrt(1000)).'<br>';
@@ -374,14 +357,12 @@ echo sqrt(2).'<br>';
 	$arr[2] = floor(sqrt(1000));
 	$arr[3] = ceil(sqrt(1000));
 	var_dump($arr);
-
 	
 	for($i=0;$i!=30;$i++){
 		$arr[]= mt_rand(1,10);
 		
 	}
 	echo '<pre>';print_r($arr);echo '<pre>';
-
 	$a=7;
 	$b=3;
 	if($a%$b==0){
@@ -389,18 +370,15 @@ echo sqrt(2).'<br>';
 	} else {
 		echo 'Делится с остаткосм '.fmod($a,$b);
 	}
-
 	$st=pow(2,10);
 	echo $st.'<br>';
 	echo sqrt(245).'<br>';
-
 	$arr = [4, 2, 5, 19, 13, 0, 10];
 	$result=0;
 	foreach($arr as $elem){
 		$result = $result + pow($elem,2);
 	}
 	echo sqrt($result);
-
 	echo sqrt(379).'<br>';
 	echo round(sqrt(379),0).'<br>';
 	echo round(sqrt(379),1).'<br>';
@@ -426,14 +404,12 @@ echo sqrt(2).'<br>';
 		$arr2[$key]=abs($elem);
 	}
 	echo '<pre>';print_r($arr2);echo '<pre>';
-
 	$arr =[];
 	$a=1000000;
 	for($i=1;$i<=1000000;$i++){
 		if($a%$i==0) $arr[]=$i;
 	}
 	echo '<pre>';print_r($arr);echo '<pre>';
-
 	$arr=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 	foreach($arr as $elem) {
 		$result = $result + $elem;
@@ -444,4 +420,51 @@ echo sqrt(2).'<br>';
 	}
 	echo $i;
 */
+// Функции работы со строками
+/* [strtolower, strtoupper, ucfirst, lcfirst, ucwords]
+	echo strtoupper('minsk').'<br>';//функция преобразования строки в ВЕРХНИЙ регистр(не кирилица)
+	echo mb_strtoupper('минск').'<br>';//функция преобразования строки в ВЕРХНИЙ регистр (кирилица)
+	echo ucfirst(strtolower('MINSK')).'<br>';
+	$date='31-12-2030';
+	$arr = explode('-', $date);
+	echo $arr[2].'.'.$arr[1].'.'.$arr[0].'<br>';
+	echo strtoupper('php').'<br>';
+	echo strtolower(strtoupper('php')).'<br>';// БУГАГАШЕНЬКИ =)
+	echo ucfirst('london').'<br>';
+	echo lcfirst('London').'<br>';
+	echo ucwords('london is the capital of great britain').'<br>';
+	echo ucfirst(strtolower('LONDON')).'<br>';
+*/
+/* [stlen]
+	echo strlen('html css php').'<br>';
+	$password='ivet';
+	if(strlen($password)>=5 and strlen($password)<=10) {
+		echo 'Пароль подходит!'.'<br>';
+	} else {
+		echo 'Нужно придумать другой пароль!!!'.'<br>';
+	}
+*/
+/* [substr] ???
+	echo substr('html css php',0,4).'<br>';
+	echo substr('html css php',5,3).'<br>';
+	echo substr('html css php',8,4).'<br>';
+	echo substr('html css php',-3).'<br>';
+
+//11,12,13 и 14 задачи?????
+	$a='123456789';
+	if(strlen($a)>5) {
+		echo substr($a,0,5).'...'.'<br>';
+	} elseif(strlen($a)<=5){
+		echo $a.'<br>';
+	}
+*/	
+	echo str_replace('.','-','31.12.2013').'<br>';
+	$str='abc';
+	echo str_replace(['a','b','c'],[1,2,3],$str).'<br>';
+	$lol='1a2b3c4b5d6e7f8g9h0';
+	foreach($lol as $elem){
+		if($elem===1,2,3,4,5,6,7,8,9){
+			
+		}
+	}
 ?>
